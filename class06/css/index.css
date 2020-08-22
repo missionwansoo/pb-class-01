@@ -147,7 +147,8 @@
   flex-wrap: wrap;
 }
 #portfolio_list > li{
-  width:calc(100% /4);
+  width:calc((100% - 10px) / 4 );
+  margin:5px;
 }
 #portfolio_list img{
   display:block;
