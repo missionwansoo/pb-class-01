@@ -1,0 +1,402 @@
+.containers {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+#body_content {
+  background: #f1f1f1;
+  padding-top: 89px;
+}
+
+/* section01 */
+#img_list>li {
+  float: left;
+  width: calc(100%/4);
+  overflow: hidden;
+}
+
+#img_list>li>img {
+  width: 100%;
+  display: block;
+  transition: 0.3s;
+}
+
+#img_list>li>img:hover {
+  transform: scale(1.2);
+}
+
+#pager_wrapper {
+  margin-top: 26px;
+  padding-bottom: 26px;
+}
+
+#pager_wrapper button {
+  padding: 10px 15px;
+  border: 0 solid;
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+}
+
+#pager_wrapper>div {
+  display: inline-block;
+}
+
+#pager_wrapper>div>button {
+  vertical-align: top;
+  transition: 0.5s;
+}
+
+#pager_wrapper>div>button:hover {
+  background: #000;
+  color: #fff;
+}
+
+#pager_list {
+  display: inline-block;
+}
+
+#pager_list>li {
+  float: left;
+  transition: 0.5s;
+}
+
+#pager_list>li>button:hover {
+  background: #000;
+  color: #fff;
+}
+
+#pager_list>.pager_listNow>button {
+  background: #000;
+  color: #fff;
+}
+
+#pager_list>.pager_listNow>button:hover {
+  background: #ccc;
+  color: #000;
+}
+
+/* section02 */
+#section02 {
+  background: #616161;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  color: #f1f1f1;
+}
+
+.w600 {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#section02 .section_header {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+#section02 .section02Conts {
+  padding-top: 40px;
+}
+
+#section02 .section02Conts>h3 {
+  font-size: 1.185rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+#section02_img>img {
+  width: 100%;
+}
+
+#section02_profile {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+#section02_profile>p {
+  word-break: keep-all;
+  text-align: justify;
+  margin-bottom: 14px;
+  line-height: 1.8rem;
+}
+
+#section02_skill {
+  text-align: left;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+#section02_skill .skillItems:not(first-child) {
+  margin-top: 20px;
+}
+
+#section02_skill .skillItems>h4 {
+  font-size: 1.085rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+#section02_skill .grpWrapper {
+  height: 38px;
+  background: #fff;
+  position: relative;
+}
+
+#section02_skill .grpPer {
+  height: 100%;
+  background: #9e9e9e;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+#section02_skill .grpPerTextWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#section02_skill .grpPerTextWrapper>p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#section02_skill .skillItems:nth-child(1) .grpWrapper:hover .grpPer {
+  width: 95%;
+}
+
+#section02_skill .skillItems:nth-child(2) .grpWrapper:hover .grpPer {
+  width: 85%;
+}
+
+#order_grp>div {
+  float: left;
+  height: 38px;
+}
+
+#order_grp>div:nth-child(1) {
+  width: 80%;
+  background: #9e9e9e;
+  text-align: center;
+  line-height: 30px;
+}
+
+#order_grp>div:nth-child(2) {
+  width: 20%;
+  background: #fff
+}
+
+#skill_btn {
+  margin-top: 31px;
+  margin-bottom: 36px;
+}
+
+#skill_btn button {
+  transition: 0.3s;
+  background: #f1f1f1;
+  display: inline-block;
+  padding: 15px 22px;
+  font-size: 1.04rem;
+}
+
+#skill_btn button:hover {
+  background: #000;
+  color: #fff;
+}
+
+#section02_price {
+  text-align: left;
+}
+
+#section02_price_conts>li {
+  text-align: center;
+  width: calc(50% - 8px);
+  background: #fff;
+  color: #000;
+}
+
+#section02_price_conts>li:nth-child(even) {
+  float: right;
+}
+
+#section02_price_conts>li:nth-child(odd) {
+  float: left;
+}
+
+#section02_price_conts h4 {
+  background: #000;
+  color: #fff;
+  padding: 35px 0;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.productOptions>li {
+  border-bottom: 1px solid #ddd;
+  padding: 17px 0;
+}
+
+.productOptions>li:first-child {
+  border-top: 1px solid #ddd;
+}
+
+.productPrice {
+  padding: 32px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.productPrice>p:first-child {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.productPrice>p:nth-child(2) {
+  opacity: 0.5;
+  margin-top: 20px;
+}
+
+.productBtn {
+  background: #f1f1f1;
+  padding: 24px 0;
+}
+
+.productBtn button {
+  background: #fff;
+  font-size: 1.05rem;
+  padding: 12px 20px;
+  display: inline-block;
+}
+
+.productBtn button:hover {
+  background: #ccc;
+}
+
+/* section03 */
+#section03 .containers {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+#section03 .section_header {
+  font-size: 1.2rem;
+}
+
+#section03_conts>p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.formInput>label,
+.formInput>input,
+.formInput>textarea,
+.formInput>select,
+.formInput>button {
+  display: block;
+}
+
+.formInput>label {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.formInput>input[type=text] {
+  width: 100%;
+  padding:5px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 0;
+  border: 1px solid #ccc;
+}
+
+.formInput>textarea {
+  width: 100%;
+  resize: none;
+  padding:5px;
+  height: 100px;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  margin-bottom:10px;
+}
+
+.formInput>button {
+  width:100%;
+  margin-bottom: 5px;
+  transition:0.3s;
+  background: #000;
+  color: #fff;
+  padding: 7px 0;
+}
+
+.formInput>button:hover {
+  background: #ccc;
+  color: #000;
+}
+
+.fromInput > button [type=botton]{
+  background: transparent;
+  color: #fff;
+  border:1px solid #000;
+}
+
+.fromInput > button [type=botton]:hover{
+  background:#000;
+  color: #fff;
+}
+/* modals */
+#modals {
+  width:100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  background: #000;
+  display:none;
+}
+
+@media (max-width:1600px){
+  .containers{
+    max-width:1200px;
+  }
+}
+
+@media (max-width:1200px){
+  .containers{
+    max-width:992px;
+  }
+  #m_nav_btn{
+    display:block;
+  }
+}
+
+@media (max-width:992px){
+  .containers{
+    max-width: 768px;
+  }
+}
+
+@media (max-width:768px){
+  .containers{
+    max-width: 576px;
+  }
+  .w600{
+    max-width: calc(100% - 100px);
+  }
+  #img_list>li{
+    width:calc(100% /2);
+  }
+}
+
+@media (max-width:576px){
+}

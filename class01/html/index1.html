@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    #test>p {
+      color: red;
+    }
+
+    #test>p>span {
+      color: blue;
+    }
+  </style>
+
+</head>
+
+<body>
+  <p>김완수의 테스트<br> 서버입니다.</p>
+  <div>
+    <h1>페이지 입니다.</h1>
+    <h2>서브 텍스트 입니다.</h2>
+    <h3>텍스트입니다.</h3>
+  </div>
+  <div>
+    <div id="test">
+      <p>테스트</p>
+      <p><span>테스트spna</span></p>
+      <p><span>테스트spna</span></p>
+      <p><span>테스트spna</span></p>
+      <p>테스트</p>
+    </div>
+    <div>
+      <table border="1" width="600px">
+        <thead>
+          <tr height="50px">
+            <th colspan="2">이름</th>
+            <th>연락처</th>
+            <th>주소</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>김완수</td>
+            <td>홍길동</td>
+            <td rowspan="2">01012345678</td>
+            <td>경기도</td>
+          </tr>
+          <tr>
+            <td>김완수</td>
+            <td>홍길동</td>
+            <td>경기도</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div>
+		<p>copy right</p>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width:200px;
+      height:200px;
+      background:red;
+      position:absolute;
+    }
+    .box:nth-child(2) {
+      top:200px;
+    }
+    .box2 {
+      width:200px;
+      height:200px;
+      top:600px;
+      background:blue;
+      position: absolute;
+    }
+    .box2:nth-child(4) {
+      top: 800px !important;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <!-- em : 부모 엘리먼트의 사이즈가 기본값 -->
+  <!-- rem : html 초기화 사이즈가 기본값 -->
+  <!-- html : 15px; -->
+  <!-- <div style="font-size:2rem;">\
+    font-size : 30px;
+    <p style="font-size:2em">font-size:60px;</p>
+    <p style="font-size:2rem">font-size:30px</p>
+  </div> -->
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box2"></div>
+  <div class="box2"></div>
+  <script>
+    var boxEl = document.getElementsByClassName('box')[0];
+    var boxEl2 = document.getElementsByClassName('box')[1];
+    boxEl.addEventListener("click", function(){
+      var $this = this;
+      var count = 0;
+      var animated = setInterval(function(){
+        if (count <= 200) {
+          count ++;
+          $this.style.left = count + "px";
+        } else {
+          clearInterval(animated);
+        }
+      }, 10);
+    });
+
+    boxEl2.addEventListener("click", function(){
+      var $this = this;
+      var count = 0;
+      var animated = setInterval(function(){
+        if (count <= 200) {
+          count ++;
+          $this.style.left = count + "px";
+        } else {
+          clearInterval(animated);
+        }
+      }, 10);
+    });
+
+    $(".box2").on("click", function(){
+      var $this = $(this);
+      $this.stop().animate({
+        "left":"200px" 
+      },500)
+    });
+  </script>
+</body>
+</html>

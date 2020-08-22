@@ -1,0 +1,62 @@
+<html>
+
+<head>
+
+  <title>position</title>
+  <style>
+    #wrapper {
+      width: 600px;
+      height: 600px;
+      background: yellow;
+      position: relative;
+    }
+
+    /* relative : 하위 자식들중에서 absolute를 가진 자식의 기준점 */
+    /* absoluate : 상위 부모들중에서 relative를 가진 부모들에게 상속 */
+    .abs {
+      position: absolute;
+      background: blue;
+      width: 200px;
+      height: 200px;
+      color: #fff;
+    }
+
+    .abs:first-child {
+      left: 0;
+      top: 0;
+    }
+
+    .abs:nth-child(2) {
+      right: 0;
+      top: 0;
+    }
+
+    .abs:nth-child(3) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .abs:nth-child(4) {
+      bottom: 0;
+      left: 0;
+    }
+
+    .abs:last-child {
+      right: 0;
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="abs">1번</div>
+    <div class="abs">2번</div>
+    <div class="abs">3번</div>
+    <div class="abs">4번</div>
+    <div class="abs">5번</div>
+  </div>
+</body>
+
+</html>

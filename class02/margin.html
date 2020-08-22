@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>margin, padding</title>
+    <style>
+      #wrapper {
+        width : 600px;
+        height: 600px;
+        /* padding: 20px;
+        box-sizing: border-box; */
+      }
+      #wrapper div{
+        width: 200px;
+        height: 200px;
+      }
+      #box1 {
+        margin-left: 0px;
+      }
+      #box2, #box5 {
+        margin-left: 400px;
+        margin-top: -200px;
+      }
+      #box3 {
+        margin-left: 200px;
+      }
+      #box6 {
+        margin-left: 200px;
+      }
+      #box7 {
+        margin-left: 400px;
+      }
+      .yellow_bg {
+        background: yellow;
+      }
+      .blue_bg {
+        background: blue;
+      }
+      .red_bg {
+        background: red;
+      }
+      .black_bg {
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper" class="yellow_bg">
+      <div id="box1" class="blue_bg"></div>
+      <div id="box2" class="red_bg"></div>
+      <div id="box3" class="blue_bg"></div>
+      <div id="box4" class="red_bg"></div>
+      <div id="box5" class="blue_bg"></div>
+      <div id="box6" class="black_bg"></div>
+      <div id="box7" class="blue_bg"></div>
+    </div>
+  </body>
+</html>

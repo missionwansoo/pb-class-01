@@ -1,0 +1,233 @@
+.sectionTitle {
+  color: #757575;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 55px;
+}
+
+.w980 {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* 네비게이션 */
+#nav_wrapper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#nav_wrapper>#nav_list {
+  padding: 8px 16px;
+}
+
+#nav_wrapper>#nav_list>.navItems {
+  float: left;
+  width: calc(100%/4);
+}
+
+#nav_wrapper>#nav_list>.navItems>a {
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  transition: 0.5s;
+}
+
+#nav_wrapper>#nav_list>.navItems>a:hover {
+  background: #888;
+}
+
+/* section 1 */
+#section01 {
+  background-image: url('../img/section01_bg.jpg');
+  background-size: cover;
+  /* background-size:contain */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+}
+
+#section01::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+#section01_title,
+#section03_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 2;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+#section01_title>h2,
+#section03_title>h2 {
+  font-size: 64px;
+  font-weight: 400;
+}
+
+#section01_title>p,
+#section03_title>p {
+  font-size: 30px;
+}
+
+#section01_title>p:nth-child(2) {
+  margin: 28px auto 20px auto;
+}
+
+#section01_title>p:nth-child(3) {
+  font-weight: 500;
+}
+
+/* section 2 */
+#section02,
+#section04 {
+  background: rgba(255, 221, 211, 0.5);
+  padding-top: 86px;
+  padding-bottom: 80px;
+}
+
+#section02>.w980 {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  text-align: left;
+  font-size: 15px;
+}
+
+#section02>.w980>img,
+#section04>.w980 img {
+  width: 100%
+}
+
+#section02>.w980:nth-child(3) {
+  line-height: 27px;
+  font-style: italic;
+}
+
+#detail_btn>button {
+  background: #000;
+  color: #fff;
+  border: 0;
+  padding: 14px 24px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+
+#detail_btn>button:hover {
+  color: #000;
+  background: #ccc;
+}
+
+/* section 3 */
+#section03 {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/section03_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+}
+
+#section03_title {
+  letter-spacing: 0px;
+}
+
+#section03_title>p {
+  margin-top: 60px;
+}
+
+#wedding_date {
+  margin: 50px 0;
+}
+
+#wedding_date>div {
+  float: left;
+  width: 50%;
+}
+
+#wedding_date>div>p:nth-child(2) {
+  margin: 30px auto;
+}
+
+#wedding_date>div>h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* section 5 */
+#section05 {
+  padding-top: 89px;
+  padding-bottom: 88px;
+  background: #ffdddd;
+}
+
+#section05>h2 {
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+#section05>p {
+    margin: 30px auto;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+
+#rsvp_btn {
+  padding: 8px 60px;
+  font-size: 24px;
+  line-height: 48px;
+  color: #fff;
+  background: #f44336;
+  border: 0 solid;
+  border-radius: 4px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 1s;
+}
+
+#rsvp_btn:hover {
+  background: #ccc;
+  color: #000;
+  opacity: 1;
+}
+
+/* footer */
+#footers {
+  padding: 40px 0;
+  background: #000;
+  color: #fff;
+  margin-bottom: 54px;
+}
+
+#footers a{
+  color: #fff;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+#footers a:hover{
+  color: #4CAF50;
+}

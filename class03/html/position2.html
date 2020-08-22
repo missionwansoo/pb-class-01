@@ -1,0 +1,71 @@
+<html>
+
+<head>
+  <title>float, position 차이점</title>
+  <style>
+    .floatLeft {
+      float: left;
+      width: 200px;
+      height: 200px;
+      background: yellow;
+    }
+
+    #position_model {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: red;
+      /* top, left ,right, bottom */
+    }
+
+    #static_model {
+      height: 200px;
+      background: blue;
+    }
+
+    #float_model::after {
+      clear: both;
+      content: "";
+      display: block;
+    }
+
+    #wrapper {
+      position: relative;
+      width: 700px;
+      height: 1000px;
+      background: green;
+    }
+
+    #fixed {
+      width: 300px;
+      height: 300px;
+      background: black;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      color: #fff;
+    }
+
+    #static {
+      width: 100%;
+      height: 200px;
+      background: pink;
+      position: static;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="float_model">
+      <div class="floatLeft">float 1번박스</div>
+      <div class="floatLeft">float 2번박스</div>
+    </div>
+    <div id="position_model">absolute 박스</div>
+    <div id="static_model">스태틱 박스</div>
+    <div id="fixed">fixed의 기준점은 브라우저의 크기가 기준</div>
+    <div id="static">스태틱 박스</div>
+  </div>
+</body>
+
+</html>

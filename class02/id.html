@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>id, class</title>
+    <style>
+      /* # : id 선택자 */
+      /* . : class 선택자 */
+      /* 태그 : 태그 선택자 */
+      /* > : 자식 태그&id&class */
+      #wrapper {
+        width: 600px;
+        height: 600px;
+        padding: 100px;
+        /* content-box : 컨텐츠 영역을 기준으로 사이즈 계산 */
+        /* border-box : 테두리 영억을 기준으로 사이즈 계산 */
+        box-sizing: border-box;
+      }
+      .yellowBg {
+        background: yellow;
+      }
+      #wrapper > div {
+         width: 200px;
+         height: 200px;
+      }
+      .blueBg {
+        background: blue;
+      }
+      .redBg {
+        background: red;
+      }
+      .blackBg {
+        background: black;
+      }
+      #box_1 {
+        margin-left:400px;
+      }
+      #box_2 {
+        /* 방향 지정 */
+        margin-left:0px;
+      }
+      #box_3 {
+        margin-left:200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 스테이크 표기법 : _,- 로 단어 사이에 연결 -->
+
+    <!-- 카엘표기법 : 두번쨰 단어부터 단어마다 첫번째 글자를 대문자로 표기 -->
+    <div id="wrapper" class="yellowBg">
+      <div id="box_1" class="blueBg"></div>
+      <div id="box_2" class="redBg"></div>
+      <div id="box_3" class="blackBg"></div>
+    </div>
+  </body>
+</html>

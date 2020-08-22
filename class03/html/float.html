@@ -1,0 +1,56 @@
+<html>
+<!-- head tag : 웹사이트의 컨텐츠를 담지못하고, 페이지 설정 -->
+
+<head>
+  <title>float</title>
+  <style>
+    .box{
+      width: 200px;
+      height: 200px;
+    }
+    .yellowBg{
+      background: yellow;
+    }
+    .greenBg{
+      background: green;
+    }
+    .redBg{
+      background: red;
+    }
+    .blueBg{
+      background: blue;
+    }
+    li{
+      list-style: none;
+    }
+    #box_wrapper > li{
+      float: left;
+      color:#fff;
+    }
+    /* #box_wrapper:::before */
+    #box_wrapper::after{
+      /* float된 자식들을 가라앉힘 */
+      clear:both;
+      /* content 가상클래스를 생성 */
+      content:"";
+      /* 가상클래스의 크기를 갖게함 */
+      display:block;
+    }
+  </style>
+</head>
+<!-- 실질적인 컨텐츠를 다음 -->
+
+<body>
+  <div id="wrapper">
+    <ul id="box_wrapper">
+      <!-- ::before -->
+      <li class="box yellowBg">1번박스</li>
+      <li class="box greenBg">2번박스</li>
+      <li class="box redBg">3번박스</li>
+      <!-- ::after -->
+    </ul>
+    <div class="box blueBg">box_wrapper 아래있는 벽</div>
+  </div>
+</body>
+
+</html>

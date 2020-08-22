@@ -1,0 +1,73 @@
+/* nav */
+#hd_wrapper {
+  position:fixed;
+  left: 0;
+  top: 0;
+  width:100%;
+}
+#nav_list > .navItems {
+  float:left;
+}
+#nav_list > .navItems > button {
+  border:0;
+  background: transparent;
+  padding:8px 12px;
+  color:#777;
+  transition:0.3s;
+  cursor:pointer;
+  font-weight: 400;
+}
+#nav_list > .navItems > button:hover {
+  background:#ccc;
+  color:#000;
+}
+#nav_list > .navItems > button > i {
+  font-size:0.8rem;
+  margin-right:4px;
+  position:relative;
+  top:-1px;
+}
+#search_btn {
+  border:0;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  display:block;
+  top:0;
+  padding:8px 16px;
+  transition:0.3s;
+  cursor: pointer;
+}
+#search_btn:hover{
+  background: #f44336;
+}
+#search_btn:hover > i{
+  color:#fff;
+}
+
+/* section01 */
+#section01 {
+  background-image:url('../img/mainBg.jpg');
+  background-position:center;
+  background-repeat : no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  height:100vh;
+}
+
+
+
+/* section02 */
+#section02 {
+  height:100vh;
+}
+#test {
+  width:100%;
+  height:100vh;
+  position: relative;
+}
+#test > iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

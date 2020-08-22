@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/flex-model/css/reset.css" rel="stylesheet">
+  <link href="/flex-model/css/flex.css" rel="stylesheet">
+</head>
+<body>
+  <div class="area">
+    <p>aligin-items: stretch;</p>
+    <div class="containers wrap items-stretch">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">aligin-items는 아이템들의 상하 위치조정</div>
+      <div class="flexItems greenBox">기본값은 stretch</div>
+      <div class="flexItems blackBox">아이템들이 수직축 방향으로 끝까지 쭈욱 늘어납</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>aligin-items: flex-start;</p>
+    <div class="containers wrap items-start">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">aligin-items는 정렬Y축 지정</div>
+      <div class="flexItems greenBox">aligin-items: flex-start</div>
+      <div class="flexItems blackBox">상단 정렬</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>aligin-items: flex-end;</p>
+    <div class="containers wrap items-end">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">aligin-items는 정렬Y축 지정</div>
+      <div class="flexItems greenBox">aligin-items: flex-end</div>
+      <div class="flexItems blackBox">하단 정렬</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>aligin-items: center;</p>
+    <div class="containers wrap items-center">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">aligin-items는 정렬Y축 지정</div>
+      <div class="flexItems greenBox">aligin-items: aligin-center</div>
+      <div class="flexItems blackBox">중앙정렬</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>aligin-items: baseline;</p>
+    <div class="containers wrap items-between">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">aligin-items는 정렬Y축 지정</div>
+      <div class="flexItems greenBox">aligin-items: baseline;</div>
+      <div class="flexItems blackBox">컨텐츠 글자들의 중앙정렬</div>
+    </div>
+  </div>
+</body>
+</html>

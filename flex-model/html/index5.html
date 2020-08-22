@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/flex-model/css/reset.css" rel="stylesheet">
+  <link href="/flex-model/css/flex.css" rel="stylesheet">
+</head>
+<body>
+  <div class="area">
+    <p>align-content: stretch;</p>
+    <div class="containers wrap aligin-stretch">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">align-content는 아이템들의 상하 위치조정</div>
+      <div class="flexItems greenBox">기본값은 stretch</div>
+      <div class="flexItems blackBox">위쪽에 정렬 순서대로</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>align-content: flex-start;</p>
+    <div class="containers wrap aligin-start">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">align-content는 정렬Y축 지정</div>
+      <div class="flexItems greenBox">align-content: flex-start</div>
+      <div class="flexItems blackBox">상단 정렬</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>align-content: flex-end;</p>
+    <div class="containers wrap aligin-end">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">align-content는 정렬Y축 지정</div>
+      <div class="flexItems greenBox">align-content: flex-end</div>
+      <div class="flexItems blackBox">하단 정렬</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>align-content: center;</p>
+    <div class="containers wrap aligin-center">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">align-content는 정렬Y축 지정</div>
+      <div class="flexItems greenBox">align-content: aligin-center</div>
+      <div class="flexItems blackBox">중앙정렬</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>align-content: space-between;</p>
+    <div class="containers wrap aligin-between">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">align-content는 정렬Y축 지정</div>
+      <div class="flexItems greenBox">align-content: space-between;</div>
+      <div class="flexItems blackBox">상하 아이템들간의 사이를 똑같이 맞춰줌</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>align-content: space-around;</p>
+    <div class="containers wrap aligin-around">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">align-content는 정렬Y축 지정</div>
+      <div class="flexItems greenBox">align-content: space-around;</div>
+      <div class="flexItems blackBox">상하 종료점과 시작점을 포함 각 아이템들간의 사이를 똑같이 맞춰줌</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>align-content: space-evenly;</p>
+    <div class="containers wrap aligin-evenly">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">align-content는 정렬Y축 지정</div>
+      <div class="flexItems greenBox">align-content: space-evenly;</div>
+      <div class="flexItems blackBox">상 하 종료점과 시작점을 포함 각 아이템들간의 사이를 똑같이 맞춰줌</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<html>
+
+<head>
+  <title>block css</title>
+  <style>
+    div {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    #block {
+      height: 300px;
+    }
+
+    #inlines {
+      height: 300px;
+    }
+
+    #inline_blocks {
+      height: 300px;
+    }
+
+    #inline_none {
+      height: 300px;
+    }
+
+
+    #block>div {
+      display: block;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    #inlines>div {
+      display: inline;
+      padding: 20px;
+    }
+
+    #inline_blocks>div {
+      display: inline-block;
+      padding: 30px;
+    }
+
+    #display_none>div {
+      display: none;
+    }
+
+    .purpleBg {
+      background: purple;
+    }
+
+    .redBg {
+      background: red;
+    }
+
+    .blueBg {
+      background: blue;
+    }
+
+    .greenBg {
+      background: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div id="block">
+      <div class="purpleBg">블록요소</div>
+      <div class="redBg">width 전 영역을 전부 차지</div>
+      <div class="blueBg">대표적인 태그 : h1~h6, div, ul, li, section, aticle, body</div>
+      <div class="greenBg">width, height, padding, margin</div>
+    </div>
+    <div id="inlines">
+      <div class="purpleBg">인라인요소</div>
+      <div class="redBg">컨텐츠 영역만큼 넓이를 차지</div>
+      <div class="blueBg">대표적인 태그 : span, img, input, textarea</div>
+      <div class="greenBg">패딩값은 좌우는 크기, 공간 모두 차지, 상하느 공간만 차지, 크기는 차지않음</div>
+    </div>
+    <div id="inline_blocks">
+      <div class="purpleBg">인라인 블록요소</div>
+      <div class="redBg">넓은 값은 컨텐츠의 크기만큼 차지</div>
+      <div class="blueBg">인라인 블록을 가지고 있는 대표적인 태그는 없음</div>
+      <div class="greenBg">블록태그처럼 width, height, padding, margin을 전부 줄수있음</div>
+    </div>
+    <div id="display_none">
+      <div class="purpleBg">display:none요소는 보이지 않음</div>
+    </div>
+  </div>
+</body>
+
+</html>

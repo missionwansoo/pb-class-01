@@ -1,0 +1,117 @@
+<html>
+
+<head>
+  <title>float03</title>
+  <style>
+    #box_wrapper {
+      width: 1000px;
+      height: 1000px;
+      color: #fff;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .blueBg {
+      background: blue;
+    }
+
+    .yellowBg {
+      background: yellow;
+    }
+
+    .greenBg {
+      background: green;
+    }
+
+    .redBg {
+      background: red;
+    }
+
+    .purpleBg {
+      background: purple;
+    }
+
+    /* :nth-child() */
+    /* :first-child() */
+    /* :last-child */
+    .boxLines:nth-child(1)>div {
+      float: left;
+      margin-left: 100px;
+    }
+
+    .boxLines:nth-child(2)>div {
+      float: left;
+      margin-left: 100px;
+    }
+
+    .boxLines:nth-child(2)>div>div {
+      float: left;
+      margin-left: 100px;
+    }
+
+    .boxLines:nth-child(3)>div {
+      float: left;
+      margin-left: 100px;
+    }
+
+    .boxLines:nth-child(4)>div {
+      float: left;
+      margin-left: 100px;
+    }
+
+    .boxLines:nth-child(4)>div>div {
+      float: left;
+      margin-left: 100px;
+    }
+
+    .boxLines:nth-child(5)>div {
+      float: left;
+      margin-left: 100px;
+    }
+
+    .boxLines::after {
+      clear: both;
+      content: "";
+      display: block;
+    }
+  </style>
+
+<body>
+  <div id="box_wrapper" class="yellowBg">
+    <div class="boxLines">
+      <div class="box blueBg">1-1</div>
+      <div class="box greenBg">1-2</div>
+      <div class="box blueBg">1-3</div>
+    </div>
+    <div class="boxLines">
+      <div>
+        <div class="box purpleBg">2-1</div>
+        <div class="box redBg">2-2</div>
+        <div class="box purpleBg">2-3</div>
+      </div>
+    </div>
+    <div class="boxLines">
+      <div class="box greenBg">3-1</div>
+      <div class="box blueBg">3-2</div>
+      <div class="box greenBg">3-3</div>
+    </div>
+    <div class="boxLines">
+      <div>
+        <div class="box redBg">4-1</div>
+        <div class="box purpleBg">4-2</div>
+        <div class="box redBg">4-3</div>
+      </div>
+    </div>
+    <div class="boxLines">
+      <div class="box blueBg">5-1</div>
+      <div class="box greenBg">5-2</div>
+      <div class="box blueBg">5-3</div>
+    </div>
+  </div>
+</body>
+</head>
+
+</html>

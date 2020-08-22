@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/flex-model/css/reset.css" rel="stylesheet">
+  <link href="/flex-model/css/flex.css" rel="stylesheet">
+</head>
+<body>
+  <div class="area">
+    <p>flex-wrap: nowrap</p>
+    <div class="containers nowrap">
+      <div class="flexItems redBox wrapItems">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox wrapItems">flex-wrap은 줄넘김 설정</div>
+      <div class="flexItems greenBox wrapItems">기본값은 nowrap</div>
+      <div class="flexItems blackBox wrapItems">컨테이너를 벗어남</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>flex-wrap: wrap</p>
+    <div class="containers wrap">
+      <div class="flexItems redBox wrapItems">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox wrapItems">flex-wrap은 줄넘김 설정</div>
+      <div class="flexItems greenBox wrapItems">flex-wrap: wrap</div>
+      <div class="flexItems blackBox wrapItems">반응형처럼 오른쪽 끝에 아이템부터 밑으로 떨어짐</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>flex-wrap: wrap-reverse</p>
+    <div class="containers wrap-reverse">
+      <div class="flexItems redBox wrapItems">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox wrapItems">flex-wrap은 줄넘김 설정</div>
+      <div class="flexItems greenBox wrapItems">flex-wrap: wrap-reverse</div>
+      <div class="flexItems blackBox wrapItems">오른쪽 끝에 아이템부터 위로 올라감</div>
+    </div>
+  </div>
+</body>
+</html>

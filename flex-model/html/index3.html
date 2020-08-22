@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/flex-model/css/reset.css" rel="stylesheet">
+  <link href="/flex-model/css/flex.css" rel="stylesheet">
+</head>
+<body>
+  <div class="area">
+    <p>justify-content: flex-start</p>
+    <div class="containers start">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">justify-content는 정렬축 지정</div>
+      <div class="flexItems greenBox">기본값은 start</div>
+      <div class="flexItems blackBox">왼쪽(시작점) 정렬</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>justify-content: flex-end</p>
+    <div class="containers end">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">justify-content는 정렬축 지정</div>
+      <div class="flexItems greenBox">justify-content: flex-end</div>
+      <div class="flexItems blackBox">오른쪽(종료점) 정렬</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>justify-content: center</p>
+    <div class="containers center">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">justify-content는 정렬축 지정</div>
+      <div class="flexItems greenBox">justify-content: center</div>
+      <div class="flexItems blackBox">중앙정렬</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>justify-content: space-between</p>
+    <div class="containers between">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">justify-content는 정렬축 지정</div>
+      <div class="flexItems greenBox">justify-content: space-between</div>
+      <div class="flexItems blackBox">각 아이템과 아이템 사이의 거리를 자동으로 같게 띄워줌</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>justify-content: space-around</p>
+    <div class="containers around">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">justify-content는 정렬축 지정</div>
+      <div class="flexItems greenBox">justify-content: space-around</div>
+      <div class="flexItems blackBox">각 아이템들간의 좌 우 여백값을 똑같이 맞춰줌</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>justify-content: space-evenly</p>
+    <div class="containers evenly">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">justify-content는 정렬축 지정</div>
+      <div class="flexItems greenBox">justify-content: space-evenly</div>
+      <div class="flexItems blackBox">종료점과 시작점을 포함 각 아이템들간의 사이를 똑같이 맞춰줌</div>
+    </div>
+  </div>
+</body>
+</html>

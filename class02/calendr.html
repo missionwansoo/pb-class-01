@@ -1,0 +1,134 @@
+<html>
+
+<head>
+  <title>7월 달력</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 800px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    tr {
+      height: 100px;
+    }
+
+    td {
+      vertical-align: top;
+      width: calc(100% / 7);
+    }
+
+    td span {
+      color: #000000;
+      opacity: 0.5;
+      float: right;
+    }
+    td a {
+      text-decoration: none;
+      display: block;
+    }
+
+    .sun {
+      color: red;
+    }
+
+    .sat {
+      color: blue;
+    }
+
+    #month {
+      font-size: 40px;
+      color: #fff;
+      background: #333333;
+    }
+
+    #week {
+      font-size: 20px;
+      background: #f1f1f1;
+      height: 10px;
+    }
+
+    #today {
+      background: pink;
+    }
+
+    .nextPrevMonth {
+      opacity: 0.3;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="7" id="month">2020년 7월</th>
+        </tr>
+        <tr id="week">
+          <th class="sun">일</th>
+          <th>월</th>
+          <th>화</th>
+          <th>수</th>
+          <th>목</th>
+          <th>금</th>
+          <th class="sat">토</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="sun nextPrevMonth">28</td>
+          <td class="nextPrevMonth">29</td>
+          <td class="nextPrevMonth">30</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td class="sat">4</td>
+        </tr>
+        <tr>
+          <td class="sun">5<span>음5.15</span></td>
+          <td>6</td>
+          <td>7<span>소서</span></td>
+          <td id="today">8<a href="naver.com">정보보호의날</a></td>
+          <td>9</td>
+          <td>10</td>
+          <td class="sat">11</td>
+        </tr>
+        <tr>
+          <td class="sun">12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16<a href="naver.com">초복</a></td>
+          <td>17<a href="naver.com">제헌절</a></td>
+          <td class="sat">18</td>
+        </tr>
+        <tr>
+          <td class="sun">19</td>
+          <td>20</td>
+          <td>21<span>음6.1</span></td>
+          <td>22<a href="naver.com">대서</a></td>
+          <td>23</td>
+          <td>24</td>
+          <td class="sat">25</td>
+        </tr>
+        <tr>
+          <td class="sun">26<a href="naver.com">중복</a></td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+          <td class="sat nextPrevMonth">1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+table {
+  width: 500px;
+}
+td, th {
+  border: 1px solid #ccc;
+}
+th {
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+}
+td {
+  font-size: 10px;
+  text-align: center;
+}
+li {
+  color: green;
+}
+li a {
+  color: green;
+}
+ol {
+  display: 
+}

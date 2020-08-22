@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/flex-model/css/reset.css" rel="stylesheet">
+  <link href="/flex-model/css/flex.css" rel="stylesheet">
+</head>
+<body>
+  <div class="area">
+    <p>display : flex</p>
+    <div class="containers">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">.flexItems의 width는 각자<br><br> 자신의 크기만큼..</div>
+      <div class="flexItems greenBox">최초방향은<br> 왼쪽정렬</div>
+      <div class="flexItems blackBox">높이값도 모두 같음...</div>
+    </div>
+    <div class="clear">
+      <div class="floatLeft flexItems redBox">float</div>
+      <div class="floatLeft flexItems blueBox">모델과<Br><Br><Br></div>
+      <div class="floatLeft flexItems greenBox">비교해</div>
+      <div class="floatLeft flexItems blackBox">보세요</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>display : inline-flex</p>
+    <div class="containers-inline">
+      <div class="flexItems redBox">.containers 는<br> display :inline-flex</div>
+      <div class="flexItems blueBox">.flexItems의 width는 각자<br><br> 자신의 크기만큼..</div>
+      <div class="flexItems greenBox">최초방향은<br> 왼쪽정렬</div>
+      <div class="flexItems blackBox">높이값도 모두 같음...</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>flex-direction: row;</p>
+    <div class="containers containers-row">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">.flex-direction 는 row이며 기본값</div>
+      <div class="flexItems greenBox">.flexItems 자식 순서대로 정렬</div>
+      <div class="flexItems blackBox">왼쪽정렬</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>flex-direction: column;</p>
+    <div class="containers containers-column">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">.flex-direction 는 column</div>
+      <div class="flexItems greenBox">.flexItems 자식 순서대로 display:block 처럼 쌓임</div>
+      <div class="flexItems blackBox">위에서 아래로 쌓임</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>flex-direction: row-reverse;</p>
+    <div class="containers containers-row-reverse">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">.flex-direction 는 row-reverse</div>
+      <div class="flexItems greenBox">.flexItems 자식 순서대로 반대쪽부터 정렬</div>
+      <div class="flexItems blackBox">오른쪽 정렬</div>
+    </div>
+  </div>
+  <div class="area">
+    <p>flex-direction: column-reverse;</p>
+    <div class="containers containers-column-reverse">
+      <div class="flexItems redBox">.containers 는<br> display :flex</div>
+      <div class="flexItems blueBox">.flex-direction 는 column-reverse</div>
+      <div class="flexItems greenBox">.flexItems 자식 순서대로 display:block 처럼 아래부터 쌓임</div>
+      <div class="flexItems blackBox">아래에서 위로 쌓임</div>
+    </div>
+  </div>
+</body>
+</html>

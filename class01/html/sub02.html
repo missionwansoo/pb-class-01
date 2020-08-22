@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		/* 선택자 */
+		/* #아이디값 */
+		/* .클래스값 */
+
+		/* #profile 바로 밑에 자식 */
+		#profile>span {
+			color: red;
+		}
+
+		/* #profile 모든 자식들의 span */
+		#profile>p>span {
+			color: blue;
+		}
+		td, th {
+			border: 1px solid #ccc;
+		}
+		th {
+			background-color: rgba(0,0,0,0.5);
+			color: #fff;
+		}
+		td {
+			font-size: 10px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div>
+		<ul>
+			<li>
+				<a href="./index.html">indix</a>
+			</li>
+			<li>
+				<a href="./sub01.html">sub01</a>
+			</li>
+			<li>
+				<a href="./sub02.html">sub02</a>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<div id="profile">
+			<span>테스트</span>
+			<p><span>프로필</span></p>
+			<p><span>이름 :</span> 김완수</p>
+			<p><span>나이 :</span> 26</p>
+			<p><span>자기소개 :</span> 안녕하세요.</p>
+			<span>테스트</span>
+		</div>
+		<div>
+			<table>
+				<thead>
+					<tr>
+						<th>
+							이름
+						</th>
+						<th>
+							연락처
+						</th>
+						<th>
+							코멘트
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							홍길동
+						</td>
+						<td>
+							01012345678
+						</td>
+						<td>
+							나는 홍길동입니다.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							홍길동
+						</td>
+						<td>
+							01012345678
+						</td>
+						<td>
+							나는 홍길동입니다.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							홍길동
+						</td>
+						<td>
+							01012345678
+						</td>
+						<td>
+							나는 홍길동입니다.
+						</td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div>
+		<p>copy right</p>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <title>float03</title>
+  <style>
+    #box_wrapper {
+      width: 600px;
+      height: 600px;
+      color: #fff;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+
+    .blueBg {
+      background: blue;
+    }
+
+    .yellowBg {
+      background: yellow;
+    }
+
+    .greenBg {
+      background: green;
+    }
+
+    /* :nth-child() */
+    /* :first-child() */
+    /* :last-child */
+    .boxLines:nth-child(1) > div{
+      float: left;
+    }
+    .boxLines:nth-child(1) > div:nth-child(2) {
+      float: right;
+    }
+    .boxLines:nth-child(2) > div{
+      margin: 0 auto;
+    }
+    .boxLines:nth-child(3) > div{
+      float: left;
+    }
+    .boxLines:nth-child(3) > div:nth-child(2) {
+      margin-left: 200px;
+    }
+    .boxLines:first-child::after,
+    .boxLines:last-child::after{
+      clear:both;
+      content:"";
+      display:block;
+    }
+  </style>
+
+<body>
+  <div id="box_wrapper" class="yellowBg">
+    <div class="boxLines">
+      <div class="box blueBg">1-1</div>
+      <div class="box greenBg">1-2</div>
+    </div>
+    <div class="boxLines">
+      <div class="box blueBg">2-1</div>
+    </div>
+    <div class="boxLines">
+      <div class="box greenBg">3-1</div>
+      <div class="box blueBg">3-2</div>
+    </div>
+  </div>
+</body>
+</head>
+
+</html>

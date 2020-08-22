@@ -1,0 +1,129 @@
+#nav_wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #f44336;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#nav_wrapper>#nav_list>.navItems {
+  float: left;
+  padding: 10px 30px;
+  letter-spacing: 5px;
+}
+
+#nav_wrapper>#nav_list>.navItems>a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  height: 38px;
+  line-height: 38px;
+}
+
+#nav_wrapper>#nav_list>.navItems:hover {
+  color: #000;
+  background: #fff;
+  transition: 0.5s;
+  border: 0;
+}
+
+#nav_wrapper>#nav_list>.navItems>a:hover {
+  color: #000;
+  transition: 0.5s;
+}
+
+#section01 {
+  background: #f44336;
+  height: 550px;
+  position: relative;
+}
+
+#section01_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+  color: #fff;
+}
+
+#section01_title>h2 {
+  font-size: 70px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  letter-spacing: 4px;
+}
+
+#section01_title>h3 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+#section01_title>button {
+  background: #000;
+  color: #fff;
+  border: 0;
+  padding: 15px 40px;
+  font-size: 25px;
+  font-weight: 300;
+  transition: 0.5s;
+}
+
+#section01_title>button:hover {
+  background: #fff;
+  color: #000;
+}
+
+#section02 {
+  padding: 70px 8px;
+}
+
+#section02>.section02_text {
+  margin:0 auto;
+  max-width: 1100px;
+}
+
+#section02>.section02_text h4,
+#section03>.section03_text h4 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+#section02>.section02_text>div{
+  display: inline-block;
+}
+
+#section02>.section02_text>.section02_text1 {
+  text-align: left;
+  line-height: 30px;
+  display: inline-block;
+  max-width: 66%;
+  min-width: 500px;
+}
+
+#section02>.section02_text>.section02_img {
+  width: 33%;
+  top:0;
+  margin-top: 30px;
+}
+
+#section02>.section02_text .text1,
+#section03>.section03_text .text1 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+#section02>.section02_text .text2,
+#section03>.section03_text .text2 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #222;
+  margin-bottom: 40px;
+}

@@ -1,0 +1,158 @@
+.area {
+  border:2px dotted #000;
+  padding:20px;
+  margin-bottom: 10px;
+}
+.redBox {
+  background:red;
+}
+.blueBox {
+  background: blue;
+}
+.greenBox {
+  background:green;
+}
+.blackBox {
+  background:#000;
+}
+.flexItems {
+  padding:50px 10px;
+  color:#fff;
+}
+.containers {
+  display:flex;
+}
+.containers-inline {
+  display: inline-flex;
+}
+.containers-direction {
+  flex-direction: row;
+}
+.containers-column {
+  flex-direction: column;
+}
+.containers-row-reverse {
+  flex-direction: row-reverse;
+}
+.containers-column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* wrap */
+.wrapItems {
+  padding:10px 230px;
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+/* flex-flow: row wrap; */
+/* 아래의 두 줄을 줄여 쓴 것 */
+/* flex-direction: row; */
+/* flex-wrap: wrap; */
+
+/* justify */
+.start {
+  justify-content: flex-start;
+  height:200px;
+}
+.end {
+  justify-content: flex-end;
+  height:200px;
+}
+.center {
+  justify-content: center;
+  height:200px;
+}
+.between {
+  justify-content: space-between;
+  height:200px;
+}
+.around {
+  justify-content: space-around;
+  height:200px;
+}
+.evenly {
+  justify-content: space-evenly;
+  height:200px;
+}
+
+/* align-contents */
+.aligin-stretch {
+  align-content: stretch;
+  height:800px;
+}
+.aligin-start {
+  align-content: flex-start;
+  height:800px;
+}
+.aligin-end {
+  align-content: flex-end;
+  height:800px;
+}
+.aligin-center {
+  align-content: center;
+  height:800px;
+}
+.aligin-between {
+  align-content: space-between;
+  height:800px;
+}
+.aligin-around {
+  align-content: space-around;
+  height:800px;
+}
+.aligin-evenly {
+  align-content: space-evenly;
+  height:800px;
+}
+.aligin-stretch .flexItems {
+  width:40%;
+}
+.aligin-start .flexItems {
+  width:40%;
+}
+.aligin-end .flexItems {
+  width:40%;
+}
+.aligin-center .flexItems {
+  width:40%;
+}
+.aligin-between .flexItems {
+  width:40%;
+}
+.aligin-around .flexItems {
+  width:40%;
+}
+.aligin-evenly .flexItems {
+  width:40%;
+}
+
+
+.items-stretch {
+  align-items: stretch;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.items-baseline {
+  align-items: baseline;
+}
+
+.floatLeft {
+  float: left;
+}
+.floatRight {
+  float: right;
+}
