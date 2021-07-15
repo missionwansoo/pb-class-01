@@ -31,7 +31,7 @@
 #main_section {
   width:100%;
   height:100vh;
-  background-image:url('/class06/img/main_bg.jpg');
+  background-image:url('../img/main_bg.jpg');
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center;
@@ -140,7 +140,7 @@
 }
 /* portfolio_section */
 #portfolio_section > .para_header {
-  background-image:url("/class06/img/portfolio_bg.jpg")
+  background-image:url("../img/portfolio_bg.jpg")
 }
 #portfolio_list {
   display:flex;
